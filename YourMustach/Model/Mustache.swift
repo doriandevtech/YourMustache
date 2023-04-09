@@ -1,6 +1,6 @@
 //
-//  Mustach.swift
-//  YourMustach
+//  Mustache.swift
+//  YourMustache
 //
 //  Created by Dorian Emenir on 09/04/2023.
 //
@@ -8,13 +8,13 @@
 import UIKit
 
 
-struct Mustach {
+struct Mustache {
     
     var name: String
     var desc: String
     
     var title: String {
-        return "The mustach's style is \(name)"
+        return "The mustache's style is \(name)"
     }
     
     var image: UIImage? {
