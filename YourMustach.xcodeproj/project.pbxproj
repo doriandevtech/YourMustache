@@ -9,13 +9,12 @@
 /* Begin PBXBuildFile section */
 		F44815CB29E2A42B00F23C06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44815CA29E2A42B00F23C06 /* AppDelegate.swift */; };
 		F44815CD29E2A42B00F23C06 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44815CC29E2A42B00F23C06 /* SceneDelegate.swift */; };
-		F44815CF29E2A42B00F23C06 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44815CE29E2A42B00F23C06 /* ViewController.swift */; };
+		F44815CF29E2A42B00F23C06 /* MyMustacheVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44815CE29E2A42B00F23C06 /* MyMustacheVC.swift */; };
 		F44815D229E2A42B00F23C06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F44815D029E2A42B00F23C06 /* Main.storyboard */; };
 		F44815D429E2A42C00F23C06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F44815D329E2A42C00F23C06 /* Assets.xcassets */; };
 		F44815D729E2A42C00F23C06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F44815D529E2A42C00F23C06 /* LaunchScreen.storyboard */; };
 		F44815E229E2A5FD00F23C06 /* Mustache.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44815E129E2A5FD00F23C06 /* Mustache.swift */; };
 		F44815E429E2A69F00F23C06 /* AllMustaches.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44815E329E2A69F00F23C06 /* AllMustaches.swift */; };
-		F44815E629E2AEA500F23C06 /* MustachesCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44815E529E2AEA500F23C06 /* MustachesCVC.swift */; };
 		F44815E829E2AF0E00F23C06 /* MustacheCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44815E729E2AF0E00F23C06 /* MustacheCell.swift */; };
 		F44815EA29E2AF3B00F23C06 /* DetailedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44815E929E2AF3B00F23C06 /* DetailedVC.swift */; };
 /* End PBXBuildFile section */
@@ -24,14 +23,13 @@
 		F44815C729E2A42B00F23C06 /* YourMustach.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YourMustach.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F44815CA29E2A42B00F23C06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F44815CC29E2A42B00F23C06 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F44815CE29E2A42B00F23C06 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F44815CE29E2A42B00F23C06 /* MyMustacheVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMustacheVC.swift; sourceTree = "<group>"; };
 		F44815D129E2A42B00F23C06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F44815D329E2A42C00F23C06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F44815D629E2A42C00F23C06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F44815D829E2A42C00F23C06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F44815E129E2A5FD00F23C06 /* Mustache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mustache.swift; sourceTree = "<group>"; };
 		F44815E329E2A69F00F23C06 /* AllMustaches.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllMustaches.swift; sourceTree = "<group>"; };
-		F44815E529E2AEA500F23C06 /* MustachesCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MustachesCVC.swift; sourceTree = "<group>"; };
 		F44815E729E2AF0E00F23C06 /* MustacheCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MustacheCell.swift; sourceTree = "<group>"; };
 		F44815E929E2AF3B00F23C06 /* DetailedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,7 +68,6 @@
 				F44815DF29E2A4E500F23C06 /* VIew */,
 				F44815E029E2A4EA00F23C06 /* Controller */,
 				F44815CA29E2A42B00F23C06 /* AppDelegate.swift */,
-				F44815CE29E2A42B00F23C06 /* ViewController.swift */,
 				F44815CC29E2A42B00F23C06 /* SceneDelegate.swift */,
 				F44815D029E2A42B00F23C06 /* Main.storyboard */,
 				F44815D329E2A42C00F23C06 /* Assets.xcassets */,
@@ -100,7 +97,7 @@
 		F44815E029E2A4EA00F23C06 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				F44815E529E2AEA500F23C06 /* MustachesCVC.swift */,
+				F44815CE29E2A42B00F23C06 /* MyMustacheVC.swift */,
 				F44815E929E2AF3B00F23C06 /* DetailedVC.swift */,
 			);
 			path = Controller;
@@ -179,8 +176,7 @@
 			files = (
 				F44815EA29E2AF3B00F23C06 /* DetailedVC.swift in Sources */,
 				F44815E429E2A69F00F23C06 /* AllMustaches.swift in Sources */,
-				F44815CF29E2A42B00F23C06 /* ViewController.swift in Sources */,
-				F44815E629E2AEA500F23C06 /* MustachesCVC.swift in Sources */,
+				F44815CF29E2A42B00F23C06 /* MyMustacheVC.swift in Sources */,
 				F44815E229E2A5FD00F23C06 /* Mustache.swift in Sources */,
 				F44815E829E2AF0E00F23C06 /* MustacheCell.swift in Sources */,
 				F44815CB29E2A42B00F23C06 /* AppDelegate.swift in Sources */,
