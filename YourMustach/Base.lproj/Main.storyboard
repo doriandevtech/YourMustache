@@ -5,20 +5,105 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Your Mustach-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MustachesCVC" customModule="YourMustach" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MyMustacheVC" customModule="YourMustach" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kgM-aW-Osq">
+                                <rect key="frame" x="10" y="166" width="355" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="nna-0P-Pn9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vx7-sA-gsc">
+                                <rect key="frame" x="10" y="546" width="355" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="Ffn-Nc-P3g"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Qnx-db-A4p">
+                                <rect key="frame" x="10" y="236" width="355" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="qrs-WM-OEH"/>
+                                </constraints>
+                            </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="OtH-ve-bfY">
+                                <rect key="frame" x="10" y="668" width="355" height="90"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="6Dx-g1-PGI"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="iXM-F1-VcR">
+                                    <size key="itemSize" width="83" height="83"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MyCell" id="TPQ-RW-V6F" customClass="MustacheCell" customModule="YourMustach" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="83" height="83"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="vzA-Ad-MNv">
+                                            <rect key="frame" x="0.0" y="0.0" width="83" height="83"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GHZ-Nc-Sdf">
+                                                    <rect key="frame" x="10" y="10" width="63" height="63"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="GHZ-Nc-Sdf" secondAttribute="bottom" constant="10" id="63h-gi-Zju"/>
+                                                <constraint firstAttribute="trailing" secondItem="GHZ-Nc-Sdf" secondAttribute="trailing" constant="10" id="9WI-JI-scQ"/>
+                                                <constraint firstItem="GHZ-Nc-Sdf" firstAttribute="top" secondItem="vzA-Ad-MNv" secondAttribute="top" constant="10" id="B8L-Xo-IfD"/>
+                                                <constraint firstItem="GHZ-Nc-Sdf" firstAttribute="leading" secondItem="vzA-Ad-MNv" secondAttribute="leading" constant="10" id="dQ4-5e-ijm"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="83" height="83"/>
+                                        <connections>
+                                            <outlet property="objectIV" destination="GHZ-Nc-Sdf" id="Xs4-0M-ehO"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Vx7-sA-gsc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="01p-HO-XpJ"/>
+                            <constraint firstItem="Qnx-db-A4p" firstAttribute="top" secondItem="kgM-aW-Osq" secondAttribute="bottom" constant="30" id="20Y-7x-H5l"/>
+                            <constraint firstItem="Qnx-db-A4p" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="4K5-Px-sFE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OtH-ve-bfY" secondAttribute="bottom" constant="20" id="L56-Pe-Hv5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kgM-aW-Osq" secondAttribute="trailing" constant="10" id="QVL-mG-Fnu"/>
+                            <constraint firstItem="Vx7-sA-gsc" firstAttribute="top" secondItem="Qnx-db-A4p" secondAttribute="bottom" constant="10" id="WbH-ta-uJC"/>
+                            <constraint firstItem="OtH-ve-bfY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="XAe-Eo-Dfs"/>
+                            <constraint firstItem="kgM-aW-Osq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Xsu-aQ-uKv"/>
+                            <constraint firstItem="kgM-aW-Osq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="cQH-Mh-r6F"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Qnx-db-A4p" secondAttribute="trailing" constant="10" id="jnC-Fu-qYy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OtH-ve-bfY" secondAttribute="trailing" constant="10" id="kdV-O7-dXS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vx7-sA-gsc" secondAttribute="trailing" constant="10" id="tLm-Lq-CUz"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Your Mustach" id="IPk-mM-amu"/>
+                    <connections>
+                        <outlet property="mustachDescLbl" destination="Vx7-sA-gsc" id="YQQ-if-PLV"/>
+                        <outlet property="mustacheIV" destination="Qnx-db-A4p" id="MNc-TZ-EjT"/>
+                        <outlet property="mustacheNameLbl" destination="kgM-aW-Osq" id="hcW-lf-1kp"/>
+                        <outlet property="mustachesCollectionView" destination="OtH-ve-bfY" id="PWc-pk-d0n"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
