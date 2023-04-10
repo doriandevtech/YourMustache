@@ -9,4 +9,12 @@ import UIKit
 
 class MustacheCell: UICollectionViewCell {
     
+    @IBOutlet weak var objectIV: UIImageView!
+    
+    var object: Mustache! {
+        didSet {
+            objectIV.image = object.image
+            objectIV.layer.cornerRadius = objectIV.frame.width / 2
+        }
+    }
 }
