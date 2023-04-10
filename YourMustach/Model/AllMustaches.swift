@@ -11,7 +11,7 @@ class AllMustaches {
     
     static let get = AllMustaches()
     
-    var all: [Mustache] {
+    var allMustaches: [Mustache] {
         return [
             Mustache(name: "chevron", desc: "Ce style à été popularisée pendant les années 1980, alors que Tom Selleck l'arborait pour l'émission Magnum. La moustache de style chevron est assez épaisse et assez large. Celle-ci a généralement tendance à couvrir complétement la bordure de la lèvre supérieure. Pour croître cette moustache, il faut simplement de la patience et laisser pousser tous les poils entre la lèvre supérieure et le nez. "),
             Mustache(name: "Dali", desc: "Ce style de moustache s'inspire de l'emblème du surréalisme du 20e siècle, le peintre espagnol Salvador Dali. La moustache de style Dali est assez étroite et ses pointes extérieures sont recourbées vers le haut. Encore une fois, pour croître cette moustache, il faut d'abord de la patience, afin d'initialement laisser pousser les poils entre la lèvre supérieure et le nez pour qu'ils atteignent une certaine longueur. Il faut aussi les entraîner régulièrement à croître vers les extrémités de la bouche à l'aide d'un peigne à moustache et enfin, recourber les pointes vers le haut à l'aide d'une bonne cire à moustache."),
