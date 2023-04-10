@@ -22,15 +22,13 @@ class MyMustacheVC: UIViewController {
         mustachesCollectionView.dataSource = self
         mustachesCollectionView.delegate = self
         let flow = UICollectionViewFlowLayout()
-        let width = mustachesCollectionView.frame.width * 0.8
-        let height = mustachesCollectionView.frame.width * 0.8
+        let width = mustachesCollectionView.frame.width * 0.4
+        let height = mustachesCollectionView.frame.height
         flow.itemSize = CGSize(width: width, height: height)
-        flow.minimumLineSpacing = 5
-        flow.minimumInteritemSpacing = 5
+        flow.minimumLineSpacing = 0
         flow.scrollDirection = .horizontal
         mustachesCollectionView.collectionViewLayout = flow
         
-        mustacheNameLbl.text = "HELL0"
     }
 
 
@@ -56,4 +54,5 @@ extension MyMustacheVC: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print(objects[indexPath.item].name)
     }
+
 }
