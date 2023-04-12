@@ -32,6 +32,7 @@
 		F44815E329E2A69F00F23C06 /* AllMustaches.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllMustaches.swift; sourceTree = "<group>"; };
 		F44815E729E2AF0E00F23C06 /* MustacheCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MustacheCell.swift; sourceTree = "<group>"; };
 		F44815E929E2AF3B00F23C06 /* DetailedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedVC.swift; sourceTree = "<group>"; };
+		F471866A29E74EF4006ED30E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +49,7 @@
 		F44815BE29E2A42B00F23C06 = {
 			isa = PBXGroup;
 			children = (
+				F471866A29E74EF4006ED30E /* README.md */,
 				F44815C929E2A42B00F23C06 /* YourMustach */,
 				F44815C829E2A42B00F23C06 /* Products */,
 			);
