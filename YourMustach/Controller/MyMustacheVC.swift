@@ -22,12 +22,20 @@ class MyMustacheVC: UIViewController {
         mustachesCollectionView.dataSource = self
         mustachesCollectionView.delegate = self
         let flow = UICollectionViewFlowLayout()
-        let width = mustachesCollectionView.frame.width * 0.4
+        let width = mustachesCollectionView.frame.width - 220
         let height = mustachesCollectionView.frame.height
         flow.itemSize = CGSize(width: width, height: height)
         flow.minimumLineSpacing = 0
         flow.scrollDirection = .horizontal
         mustachesCollectionView.collectionViewLayout = flow
+        
+        mustachesCollectionView.layer.cornerRadius = mustachesCollectionView.frame.width / 4
+        mustachesCollectionView.backgroundColor = .brown
+        
+        // Item view by default
+        mustacheNameLbl.text = objects[0].name
+        mustachDescLbl.text = objects[0].desc
+        mustacheIV.image = objects[0].image
         
     }
 
@@ -52,7 +60,10 @@ extension MyMustacheVC: UICollectionViewDelegate, UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print(objects[indexPath.item].name)
+        // Update view with selected item
+        mustacheNameLbl.text = objects[indexPath.item].name
+        mustachDescLbl.text = objects[indexPath.item].desc
+        mustacheIV.image = objects[indexPath.item].image
     }
 
 }
