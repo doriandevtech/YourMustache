@@ -14,7 +14,7 @@ class MustacheCell: UICollectionViewCell {
     var object: Mustache! {
         didSet {
             objectIV.image = object.image
-            objectIV.layer.cornerRadius = objectIV.frame.width / 2
+            objectIV.layer.cornerRadius = 45
         }
     }
 }
