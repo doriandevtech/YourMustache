@@ -13,8 +13,13 @@ struct Mustache {
     var name: String
     var desc: String
     
+    var capitalizedName: String {
+        return name.capitalized
+    }
+    
     var title: String {
-        return "The mustache's style is \(name)"
+        let capitName: String = name.capitalized
+        return "The mustache's style is \(capitName)"
     }
     
     var image: UIImage? {
