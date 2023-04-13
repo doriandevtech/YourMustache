@@ -16,7 +16,6 @@
 		F44815E229E2A5FD00F23C06 /* Mustache.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44815E129E2A5FD00F23C06 /* Mustache.swift */; };
 		F44815E429E2A69F00F23C06 /* AllMustaches.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44815E329E2A69F00F23C06 /* AllMustaches.swift */; };
 		F44815E829E2AF0E00F23C06 /* MustacheCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44815E729E2AF0E00F23C06 /* MustacheCell.swift */; };
-		F44815EA29E2AF3B00F23C06 /* DetailedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44815E929E2AF3B00F23C06 /* DetailedVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +30,6 @@
 		F44815E129E2A5FD00F23C06 /* Mustache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mustache.swift; sourceTree = "<group>"; };
 		F44815E329E2A69F00F23C06 /* AllMustaches.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllMustaches.swift; sourceTree = "<group>"; };
 		F44815E729E2AF0E00F23C06 /* MustacheCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MustacheCell.swift; sourceTree = "<group>"; };
-		F44815E929E2AF3B00F23C06 /* DetailedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedVC.swift; sourceTree = "<group>"; };
 		F471866A29E74EF4006ED30E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,7 +98,6 @@
 			isa = PBXGroup;
 			children = (
 				F44815CE29E2A42B00F23C06 /* MyMustacheVC.swift */,
-				F44815E929E2AF3B00F23C06 /* DetailedVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -176,7 +173,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F44815EA29E2AF3B00F23C06 /* DetailedVC.swift in Sources */,
 				F44815E429E2A69F00F23C06 /* AllMustaches.swift in Sources */,
 				F44815CF29E2A42B00F23C06 /* MyMustacheVC.swift in Sources */,
 				F44815E229E2A5FD00F23C06 /* Mustache.swift in Sources */,
