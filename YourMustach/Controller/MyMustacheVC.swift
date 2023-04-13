@@ -22,9 +22,7 @@ class MyMustacheVC: UIViewController {
         mustachesCollectionView.dataSource = self
         mustachesCollectionView.delegate = self
         let flow = UICollectionViewFlowLayout()
-        let width = mustachesCollectionView.frame.width - 220
-        let height = mustachesCollectionView.frame.height
-        flow.itemSize = CGSize(width: width, height: height)
+        flow.itemSize = CGSize(width: 90, height: 80)
         flow.minimumLineSpacing = 0
         flow.scrollDirection = .horizontal
         mustachesCollectionView.collectionViewLayout = flow
