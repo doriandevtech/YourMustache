@@ -22,7 +22,7 @@
 - The app is beign developped (as shown in the screenshots below👇).
 
 ## Next steps :
-- I am working on improving the UI experience, such as rounded images for items in collectionView.
+- I am working on improving the UI experience and adding UI and Unit test to the app.
 
 ## Here are some screenshots of my app ⤵️
 
